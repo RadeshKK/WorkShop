@@ -10,7 +10,7 @@ app = Flask(__name__)
 
 # Set configuration directly to avoid .env file issues
 app.config['SECRET_KEY'] = 'dev-secret-key-change-in-production'
-app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('SQLALCHEMY_DATABASE_URI', 'postgresql://workshop_09_tm23_user:xI8alH6KZ2mvyxn6HIO7e0bgPz4jo6Py@dpg-d2kogsbuibrs73eek4eg-a.singapore-postgres.render.com/workshop_09_tm23')
+app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('SQLALCHEMY_DATABASE_URI', 'postgresql://postgres:postgres@localhost:5432/WorkShop_09')
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 # Initialize SQLAlchemy
