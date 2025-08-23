@@ -1,0 +1,6 @@
+campusEvent
+    backend
+    frontend
+    .github
+        workflows
+            ci.yml
